@@ -1,0 +1,261 @@
+@media(max-width:700px){
+    
+*{
+    margin:0;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+.header{
+    width:100vw;
+    height:170vw;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    background-attachment: fixed;
+        h1{
+            position:relative;
+            font-size:15vw;
+            color:white;
+            text-shadow: 0 4px 1px black;
+        }
+
+    p{
+        position:relative;
+        left:2vw;
+        top:3vw;
+        font-size:4vw;
+        width:46vw;
+        text-align: center;
+        color:white;
+        text-shadow: 0 2px 1px black;
+    }
+}
+
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.page1{
+    width:100vw;
+    height:250vw;
+    flex-direction:column;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    position:relative;
+    section{
+        margin: 10vw 6vw;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        height:100vw;
+        div{
+            margin-bottom:4vw;
+            position:relative;
+        }
+        img:nth-child(1){
+            position:absolute;
+            top:0vw;
+            left:-1vw;
+            height:70vw;
+            margin:0;
+        }
+        img:nth-child(2){
+            height:80vw;
+            background-size:cover;
+            border-radius:1000vw;
+            z-index:1;
+            position:relative;
+        }
+        h1{
+            font-size:6vw;
+        }
+        h2{
+            font-size:6vw;
+            text-align: center;
+        }
+    }
+}
+
+
+.page3{
+    width:100vw;
+    height:140vw;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    position:relative;
+    flex-direction: column-reverse;
+    z-index:-1;
+
+    section{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height:100%;
+        margin-right:8vw;
+        flex-direction:column;
+        text-align: left;
+        &:nth-child(2){
+            padding:0 ;
+        }
+        img{
+            &:nth-child(1){
+                height:70vw;
+            }
+        }
+        h1{
+            font-size:10vw;
+            font-weight:600;
+            font-family:main;
+
+        }
+        p{
+            width:80vw;
+            font-size:4vw;
+        }
+    }
+
+}
+
+.stain{
+    position: absolute;
+    top:30vw;
+    left:80vw;
+    height:30vw;
+    z-index:-1;
+}
+
+.page4{
+    .die{
+        background:url("../public/media/Ostairs.jpg");
+        opacity:.2;
+        background-attachment: fixed;
+        top:0;
+        left:0;
+        flex-direction: column;
+    }
+    width:100%;
+    height:100vh;
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    section{
+        z-index:2000;
+        width:100%;
+        height:80vh;
+        flex-direction: column;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            width:90%;
+            height:90%;
+            margin:5vw 0;
+            display:flex;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            &:nth-child(1){
+                border:.1vw solid black;
+                padding:0 1vw;
+            }
+            p{
+                font-family:main;
+                font-size:4.3vw;
+            }
+        }
+    }
+}
+
+.quote{
+    width:100%;
+    height:30vw;
+    background-color: red;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    margin: 10vw 0;
+    h1{
+        font-family:main;
+        font-size:3.3vw;
+        color:white;
+        width:30vw;
+        text-align: center;
+    }
+    img{
+        height:10vw;
+        width:10vw;
+        display:block;
+        background-color: #7D0F0F;
+        border-radius:1vw;
+        border:#7D0F0F 1vw solid;
+    }
+    button{
+        height:10vw;
+        width:20vw;
+        border:none;
+        padding:.5vw;
+        border-radius:1vw;
+        font-size:3.3vw;
+        font-family:main;
+        &:hover{
+            background-color:#7D0F0F;
+            color:white;
+            cursor:pointer;
+        }
+    }
+}
+
+.footer{
+    background-color: rgb(31, 31, 31);
+    height: 25vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    section{
+        div{
+            display:flex;
+            flex-direction: row;
+            height: 15vh;
+            align-items: center;
+            a{
+                font-family:main;
+                font-size: 1vw;
+                color:#CBCBCB;
+                text-decoration: none;
+                margin: 0 1vw;
+            }
+            img{
+                height: 2vw;
+            }
+        }
+        h1{
+            font-size:1vw;
+            font-weight: 200;
+            color:#ffffff;
+            text-align: center;
+            font-family:main;
+            margin-bottom: 1vw;
+        }
+        h2{
+            font-size:1vw;
+            color:#CBCBCB;
+            text-align: center;
+            font-family: main-bold;
+        }
+
+    }
+}
+
+}

@@ -1,0 +1,253 @@
+@import 'scss/required';
+
+*{
+    margin:0;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+.header{
+    width:100vw;
+    height:52vw;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    background-size:cover;
+    background-attachment: fixed;
+        h1{
+            position:relative;
+            left:2vw;
+            font-size:6vw;
+        }
+
+    p{
+        position:relative;
+        left:2vw;
+        top:3vw;
+        font-size:1vw;
+        width:23vw;
+        text-align: center;
+    }
+}
+
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.page1{
+    width:100vw;
+    height:50vw;
+    padding-top:2vw;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    position:relative;
+    section{
+        margin: 5vw 6vw;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        height:3.92vw;
+        div{
+            margin-top:30vw;
+            position:relative;
+        }
+        img:nth-child(1){
+            position:absolute;
+            top:0vw;
+            left:-1vw;
+            height:35vw;
+            margin:0;
+        }
+        img:nth-child(2){
+            height:34vw;
+            background-size:cover;
+            border-radius:20vw;
+            z-index:1;
+            position:relative;
+        }
+        h1{
+            margin-top:5vw;
+            font-size:2vw;
+        }
+        h2{
+            font-size:2vw;
+        }
+    }
+}
+
+
+.page3{
+    width:100vw;
+    height:50vw;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    position:relative;
+    z-index:-1;
+    section{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:50%;
+        height:100%;
+        flex-direction:column;
+        text-align: left;
+        &:nth-child(2){
+            padding:0 10vw;
+        }
+        img{
+            &:nth-child(1){
+                height:50vw;
+            }
+        }
+        h1{
+            font-size:4vw;
+            font-weight:600;
+            font-family:main;
+        }
+        p{
+            margin:2vw 0;
+            font-size:1.5vw;
+        }
+    }
+
+}
+
+.stain{
+    position: absolute;
+    top:30vw;
+    left:80vw;
+    height:30vw;
+    z-index:-1;
+}
+
+.page4{
+    .die{
+        background:url("../public/media/Ostairs.jpg");
+        opacity:.2;
+        background-attachment: fixed;
+        top:0;
+        left:0;
+    }
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    section{
+        z-index:2000;
+        width:100%;
+        height:80vh;
+
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            width:50%;
+            height:90%;
+            margin:0 5vw;
+            margin:0 10vw;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            &:nth-child(1){
+                border:.1vw solid black;
+                padding:0 1vw;
+            }
+            p{
+                font-family:main;
+                font-size:1.3vw;
+            }
+        }
+    }
+}
+
+.quote{
+    width:100%;
+    height:10vw;
+    background-color: red;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    h1{
+        font-family:main;
+        font-size:1.3vw;
+        color:white;
+    }
+    img{
+        height:3vw;
+        width:3vw;
+        display:block;
+        background-color: #7D0F0F;
+        border-radius:1vw;
+        border:#7D0F0F 1vw solid;
+    }
+    button{
+        height:5vw;
+        width:7vw;
+        border:none;
+        padding:.5vw;
+        border-radius:1vw;
+        font-size:1.3vw;
+        font-family:main;
+        &:hover{
+            background-color:#7D0F0F;
+            color:white;
+            cursor:pointer;
+        }
+        // &:active{
+
+        // }
+    }
+}
+
+.footer{
+    background-color: rgb(31, 31, 31);
+    height: 25vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    section{
+        div{
+            display:flex;
+            flex-direction: row;
+            height: 15vh;
+            align-items: center;
+            a{
+                font-family:main;
+                font-size: 1vw;
+                color:#CBCBCB;
+                text-decoration: none;
+                margin: 0 1vw;
+            }
+            img{
+                height: 2vw;
+            }
+        }
+        h1{
+            font-size:1vw;
+            font-weight: 200;
+            color:#ffffff;
+            text-align: center;
+            font-family:main;
+            margin-bottom: 1vw;
+        }
+        h2{
+            font-size:1vw;
+            color:#CBCBCB;
+            text-align: center;
+            font-family: main-bold;
+        }
+
+    }
+}
+
+@import 'scss/mobile';
