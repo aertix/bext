@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const Page3 = () => {
     return(
       <div className="page4" >
@@ -25,10 +27,10 @@ const Page3 = () => {
           <p>Service Area</p>
           <p>Southern California, including ZIP Codes 90064, 90043, 90008, 90056, 90045, 90066, & 90094</p>
         </div>
-        {/* <div>
-          <script type="text/javascript" src="https://form.jotform.com/jsform/222310540953144"></script>
-        </div> */}
-       <div className="die" ></div>
+       <div style={{ 
+      backgroundImage: `url("media/Ostairs.jpg")` 
+    }} className="die" ><Link target="_blank" passHref={true} href="https://forms.gle/AXgy8XEn9grMWDkC7">
+       <button>Contact Us</button></Link></div>
        </section>
 
       </div>

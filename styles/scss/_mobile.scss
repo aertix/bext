@@ -18,20 +18,21 @@ body{
     background-attachment: fixed;
         h1{
             position:relative;
-            font-size:15vw;
+            font-size:20vw;
+            text-align: center;
             color:white;
-            text-shadow: 0 4px 1px black;
+            text-shadow: 0 4px 10px black;
         }
 
     p{
         position:relative;
         left:2vw;
         top:3vw;
-        font-size:4vw;
-        width:46vw;
+        font-size:6vw;
+        width:66vw;
         text-align: center;
         color:white;
-        text-shadow: 0 2px 1px black;
+        text-shadow: 0 4px 10px black;
     }
 }
 
@@ -42,7 +43,7 @@ body{
 
 .page1{
     width:100vw;
-    height:250vw;
+    height:330vw;
     flex-direction:column;
     background-size:cover;
     display:flex;
@@ -54,7 +55,9 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content:center;
-        height:100vw;
+        height:150vw;
+        border: 1px solid black;
+        border-radius:4vw;
         div{
             margin-bottom:4vw;
             position:relative;
@@ -72,6 +75,26 @@ body{
             border-radius:1000vw;
             z-index:1;
             position:relative;
+        }
+        button{
+            color:black;
+            padding:5vw 5vw;
+            border-radius:2vw;
+            font-size:3.6vw;
+            margin-top:2vw;
+            cursor:pointer;
+            transition:.2s all;
+            z-index:2;
+            &:hover{
+                background-color: rgb(11, 11, 11);
+                color:white;
+                transform:scale(1.15);
+            }
+            &:active{
+                transform:scale(1.15);
+                background-color: rgb(11, 11, 11);
+                color:white;
+            }
         }
         h1{
             font-size:6vw;
@@ -108,7 +131,7 @@ body{
         }
         img{
             &:nth-child(1){
-                height:70vw;
+                height:100vw;
             }
         }
         h1{
@@ -136,14 +159,16 @@ body{
 .page4{
     .die{
         background:url("../public/media/Ostairs.jpg");
-        opacity:.2;
         background-attachment: fixed;
         top:0;
         left:0;
         flex-direction: column;
+        button{
+            padding:10vw;
+            font-size:10vw;
+        }
     }
     width:100%;
-    height:100vh;
     flex-direction: column;
     display:flex;
     justify-content: center;
@@ -152,7 +177,7 @@ body{
     section{
         z-index:2000;
         width:100%;
-        height:80vh;
+        height:100vh;
         flex-direction: column;
         display:flex;
         justify-content: center;
@@ -165,13 +190,35 @@ body{
             text-align: center;
             flex-direction: column;
             justify-content: center;
+            margin-bottom:2vw;
+            border-radius:2vw;
             &:nth-child(1){
                 border:.1vw solid black;
                 padding:0 1vw;
             }
             p{
                 font-family:main;
-                font-size:4.3vw;
+                font-size:5.3vw;
+            }
+        }
+        button{
+            color:black;
+            padding:5vw 5vw;
+            border-radius:2vw;
+            font-size:3.6vw;
+            margin-top:2vw;
+            cursor:pointer;
+            transition:.2s all;
+            z-index:2;
+            &:hover{
+                background-color: rgb(11, 11, 11);
+                color:white;
+                transform:scale(1.15);
+            }
+            &:active{
+                transform:scale(1.15);
+                background-color: rgb(11, 11, 11);
+                color:white;
             }
         }
     }
@@ -184,29 +231,29 @@ body{
     display:flex;
     justify-content: space-evenly;
     align-items:center;
-    margin: 10vw 0;
+    margin: 20vw 0;
     h1{
         font-family:main;
-        font-size:3.3vw;
+        font-size:4.3vw;
         color:white;
         width:30vw;
         text-align: center;
     }
     img{
-        height:10vw;
-        width:10vw;
+        height:12vw;
+        width:12vw;
         display:block;
         background-color: #7D0F0F;
         border-radius:1vw;
         border:#7D0F0F 1vw solid;
     }
     button{
-        height:10vw;
+        height:14vw;
         width:20vw;
         border:none;
-        padding:.5vw;
+        padding:2vw 2vw;
         border-radius:1vw;
-        font-size:3.3vw;
+        font-size:4.3vw;
         font-family:main;
         &:hover{
             background-color:#7D0F0F;

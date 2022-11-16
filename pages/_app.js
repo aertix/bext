@@ -12,8 +12,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Header />
-       <Page1 price1="$800,000" price2 = "$1,500,000"/>
-      <Page2  price1="$900,000" price2 = "$1,300,000"/>
+       <Page1 price1="$1,799,000" price2 = "$1,500,000"/>
+      <Page2  price1="$510,000" price2 = "$1,300,000"/>
     <Quote />
     <Page4 />
     <Page3 />
