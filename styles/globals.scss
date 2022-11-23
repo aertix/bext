@@ -1,5 +1,5 @@
 @import 'scss/required';
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin:0;
     font-family: 'Fira Sans', sans-serif;
@@ -228,13 +228,11 @@ body{
         border:#7D0F0F 1vw solid;
     }
     button{
-        height:5vw;
-        width:7vw;
         border:none;
         padding:.5vw;
         border-radius:1vw;
         font-size:1.3vw;
-        font-family:main;
+        font-family: 'Poppins', sans-serif;
         &:hover{
             background-color:#7D0F0F;
             color:white;
